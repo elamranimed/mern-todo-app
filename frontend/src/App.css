@@ -1,0 +1,146 @@
+/* Fond bleu pour le reste de l'application */
+body {
+  background-color: #007BFF; /* Couleur de fond bleu pour les pages principales */
+  margin: 0; /* Supprime les marges globales */
+  padding: 0; /* Supprime les espaces internes */
+  font-family: Arial, sans-serif; /* Police de caractères pour l'ensemble de l'application */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour changement fluide */
+}
+
+/* Thème par défaut */
+:root {
+  --auth-background-color: rgb(227, 158, 230); /* Fond par défaut */
+}
+
+/* Thème synthwave */
+[data-theme="synthwave"] {
+  --auth-background-color: rgb(58, 12, 102); /* Fond violet foncé pour Synthwave */
+}
+
+/* Conteneur pour la page de connexion */
+.auth-container {
+  background-color: var(--auth-background-color); /* Utilise la variable CSS pour le fond */
+  transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+}
+
+
+/* Application des variables CSS */
+body {
+  background-color: var(--background-color); /* Utilise la variable pour le fond */
+  color: var(--text-color); /* Utilise la variable pour le texte */
+}
+  
+
+
+  /* Conteneur pour la page de connexion */
+  .auth-container {
+    background-color: rgb(227, 158, 230); /* Fond blanc spécifique à la page de connexion */
+    min-height: 100vh; /* Prend toute la hauteur de l'écran pour couvrir les zones noires */
+    display: flex; /* Active le mode flexbox pour le centrage */
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+  }
+  
+  /* Formulaire d'authentification */
+  .auth-form {
+    background-color: #d9d9d9; /* Couleur gris clair pour différencier du blanc */
+    padding: 20px; /* Ajoute de l'espace à l'intérieur du conteneur */
+    border-radius: 10px; /* Coins légèrement arrondis pour un effet visuel doux */
+    border: 1px solid #bbb; /* Bordure subtile gris foncé autour du formulaire */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre subtile pour donner de la profondeur */
+    max-width: 400px; /* Limite la largeur maximale du formulaire */
+    margin: auto; /* Centre le formulaire sur la page */
+    display: flex; /* Active flexbox pour organiser les éléments à l'intérieur */
+    flex-direction: column; /* Empile les éléments verticalement */
+    gap: 15px; /* Ajoute un espacement entre chaque élément interne */
+  }
+  
+  /* Champs de saisie */
+  .input-field {
+    background-color: white; /* Fond blanc pour les champs de saisie */
+    color: rgba(15, 14, 14, 0.95); /* Texte en noir pour la lisibilité */
+    border: 1px solid #ccc; /* Bordure grise claire autour des champs */
+    padding: 10px; /* Ajoute de l'espace interne dans les champs */
+    border-radius: 4px; /* Coins légèrement arrondis */
+    width: 100%; /* Prend toute la largeur disponible */
+    font-size: 16px; /* Taille de police standard pour les champs */
+  }
+  
+  /* Bouton principal */
+  .auth-button {
+    background-color: #007BFF; /* Couleur bleue pour le bouton principal */
+    color: rgb(255, 1, 1); /* Texte blanc pour un contraste clair */
+    border: none; /* Supprime la bordure par défaut */
+    padding: 10px 20px; /* Ajoute de l'espace interne horizontal et vertical */
+    border-radius: 4px; /* Coins arrondis pour un style harmonieux */
+    cursor: pointer; /* Change le pointeur de la souris en main sur le survol */
+  }
+  
+  .auth-button:hover {
+    background-color: #0056b3; /* Couleur bleue plus foncée au survol pour un effet interactif */
+  }
+  
+  /* Bouton de bascule entre Connexion / Inscription */
+  .toggle-button {
+    background-color: transparent; /* Pas de fond pour un style minimaliste */
+    color: #007BFF; /* Texte bleu pour correspondre au thème */
+    border: none; /* Pas de bordure pour un look épuré */
+    cursor: pointer; /* Pointeur en main pour indiquer une interaction */
+    font-size: 14px; /* Taille de texte réduite pour ce bouton */
+  }
+  
+  .toggle-button:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol pour un effet interactif */
+  }
+  
+  /* Conteneur principal après connexion */
+  .App {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 50px auto; /* Ajoute un espace autour du conteneur */
+    max-width: 600px; /* Limite la largeur maximale */
+    background-color: rgb(255, 255, 255); /* Fond blanc pour le conteneur principal */
+    padding: 20px; /* Ajoute de l'espace interne */
+    border-radius: 8px; /* Coins arrondis pour un effet propre */
+    box-shadow: 0 4px 8px rgba(229, 231, 224, 0.927); /* Ajoute une ombre légère pour la profondeur */
+  }
+  
+  .task-input {
+    background-color: rgb(254, 254, 254); /* Fond blanc pour l'input */
+    color: rgb(0, 55, 255); /* Texte  */
+    border: 1px solid #a01b95; /* Bordure grise claire */
+    padding: 10px; /* Espacement interne pour confort visuel */
+    border-radius: 4px; /* Coins légèrement arrondis */
+    width: 100%; /* Largeur complète pour le champ */
+    font-size: 16px; /* Taille de texte standard */
+    outline: none; /* Supprime la bordure de focus */
+}
+
+/* Bouton supprimer */
+.delete-button {
+  background-color: #fa0505;
+  border: 1px solid #070707;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  height: 20px;
+  
+}
+
+.delete-button-text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 10px;
+}
+
+.profil-zone {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  background-color: #76b9d3;
+  padding: 50px;
+  border: 1px solid #3b1ee0;
+}

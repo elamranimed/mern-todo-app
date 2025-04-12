@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  //code pour theme rester intact
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
+
+
+/* Ajout : Styles pour le mode sombre */
+body {
+  @apply bg-white text-black transition-all duration-300; /* Mode clair par défaut */
+}
+
+.dark body {
+  @apply bg-gray-900 text-white; /* Mode sombre */
+}
+
+code {
+  @apply bg-gray-100 dark:bg-gray-800 text-black dark:text-white; /* Mode sombre adapté */
+}
